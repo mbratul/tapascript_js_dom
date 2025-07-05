@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TapaScript JS DOM</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h1 id="heading">TapaScript DOM Example</h1>
+    <h2>TapaScript Day 17 JS DOM Part 1</h2>
+    <p class="info">javascript dom practice1</p>
+    <p class="info">javascript dom practice2</p>
+    <p>javascript dom practice3 more practice give more confidence</p>
+    <button onclick="highlight()">Highlight</button>
+
+    <hr />
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search...."
+      onkeyup="filterList()"
+    />
+    <ul id="itemList">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+      <li>Grapes</li>
+      <li>Orange</li>
+    </ul>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
