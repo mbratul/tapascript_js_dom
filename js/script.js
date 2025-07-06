@@ -1,4 +1,6 @@
-/* Tapa Script Day -17 JavaScript DOM Example goes here  */
+/*  Tapa Script Day -17 JavaScript DOM Example goes here  
+    url: https://youtu.be/F4mVSaj6uls?si=4dDZybZFnp1eGvCw
+*/
 /* 
     DOM Types
 
@@ -81,7 +83,10 @@ function filterList() {
   });
 }
 
-/* Tapa Script Day-18 DOM Manipulation */
+/* 
+  Tapa Script Day-18 DOM Manipulation  
+  url: https://youtu.be/BoYgn_Mf0hA?si=LsEWltFQWHHSMrPv
+*/
 
 // - Creating Elements
 // - Inserting Elements
@@ -103,8 +108,62 @@ console.log(pElem);
 // - Inserting Elements
 let spanElem = document.createElement("span");
 spanElem.innerText = "i am a span added dynamically";
-let inputElem = document.querySelector("input");
-document.body.insertBefore(spanElem, inputElem);
+let pElem1 = document.querySelector("p.day18");
+document.body.insertBefore(spanElem, pElem1);
 console.log(spanElem);
 
 // - Modifying Content
+{
+  let pElem = document.querySelector("p.day18");
+  pElem.innerHTML = "<u>hello developer</u> how are you?";
+
+  let divElem = document.querySelector("div");
+  console.log("inner text", divElem.innerText);
+  console.log("text content", divElem.textContent);
+}
+
+// - Removing/replacing Elements
+{
+  let ulListElem = document.querySelector("ul#day18List");
+  //let liRemoveElem = ulListElem.children[0];
+  //ulListElem.removeChild(liRemoveElem);
+  replaceByParaElem = document.querySelector("p");
+  ulListElem.replaceChildren(replaceByParaElem);
+
+  document.getElementById("removeMe").remove(); //remove all elements of an html tag
+  //console.log(ulListElem);
+}
+
+// - Read, Write, and Remove Attributes
+{
+  let imageElem = document.querySelector("img");
+  imageElem.setAttribute("src", "./images/banner.jpg");
+  imageElem.setAttribute("alt", "banner");
+
+  imageElem.removeAttribute("width");
+  imageElem.hasAttribute("src");
+  console.log(
+    "width attribute of image element is",
+    imageElem.hasAttribute("width")
+  );
+
+  console.log(imageElem);
+}
+
+// - Travarsing/Navigating DOM
+{
+  //parent element and parent node
+  childSpanElem = document.querySelector("#child");
+  // find parent element
+  console.log("parent element", childSpanElem.parentElement.parentElement);
+  console.log("parent node", childSpanElem.parentNode.parentNode);
+
+  // child element or child node
+  grandparentElem = document.querySelector("#grandparent");
+  console.log("child element", grandparentElem.children);
+  console.log("child node", grandparentElem.childNodes);
+
+  //first element and element child
+  console.log("first child element", grandparentElem.firstChild);
+  console.log("first child node", grandparentElem.firstElementChild);
+}
