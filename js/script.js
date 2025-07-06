@@ -1,4 +1,4 @@
-/* JavaScript DOM Example goes here  */
+/* Tapa Script Day -17 JavaScript DOM Example goes here  */
 /* 
     DOM Types
 
@@ -79,6 +79,32 @@ function filterList() {
       ? "block"
       : "none";
   });
-  //console.log(itemListElem);
 }
-//filterList();
+
+/* Tapa Script Day-18 DOM Manipulation */
+
+// - Creating Elements
+// - Inserting Elements
+// - Modifying Content
+// - Removing/replacing Elements
+// - Read, Write, and Remove Attributes
+// - Travarsing/Navigating DOM
+// - Mnaipulating Styles
+// - Manipulating Classes
+// - Controlling Visibilities
+// - Build Project(s)
+
+// - Creating Elements
+let pElem = document.createElement("p");
+pElem.innerText = "This is a text added Dynamically";
+document.body.appendChild(pElem);
+console.log(pElem);
+
+// - Inserting Elements
+let spanElem = document.createElement("span");
+spanElem.innerText = "i am a span added dynamically";
+let inputElem = document.querySelector("input");
+document.body.insertBefore(spanElem, inputElem);
+console.log(spanElem);
+
+// - Modifying Content
