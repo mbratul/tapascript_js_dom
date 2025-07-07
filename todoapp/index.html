@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
-    <div>
+    <div id="wrapper">
       <h1>Simple To Do App</h1>
+
+      <h2>Task Manager</h2>
+
+      <input type="text" id="taskInput" placeholder="New Task" />
+      <button onclick="addTask()">Add Task</button>
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Tasks..."
+        onkeyup="filterTasks()"
+      />
+      <ul id="taskList"></ul>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
