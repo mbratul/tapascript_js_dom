@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulate Style</title>
+    <style>
+      .mainClass {
+        font-size: 1rem;
+        padding: 2px;
+        border: 2px solid red;
+        background-color: pink;
+        border-radius: 5px;
+      }
+      .secondaryClass {
+        font-size: 1rem;
+        padding: 2px;
+        border: 2px solid green;
+        background-color: red;
+        border-radius: 5px;
+      }
+      .layout {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Manipulating Style -->
+    <h1>Manipulating Style</h1>
+    <p id="pId" style="background-color: green; color: white">
+      let's do some style
+    </p>
+    <!-- Manipulating Class -->
+    <div id="mainId" class="mainClass layout">
+      <p id="secondId">
+        <span id="childId">i love dom</span>
+      </p>
+    </div>
+
+    <script>
+      //Manipulating Style
+      {
+        let pElem = document.querySelector("#pId");
+        pElem.style.backgroundColor = "pink";
+        console.log(pElem.style);
+      }
+
+      //   Manipulating Class
+      {
+        let mainDivElem = document.querySelector("#mainId");
+        // console.log(mainDivElem.className);
+        // mainDivElem.className = "secondaryClass";
+        // console.log(mainDivElem.className);
+        console.log(mainDivElem.classList);
+        // mainDivElem.classList.add("test");
+        // mainDivElem.classList.remove("layout");
+        mainDivElem.classList.replace("mainClass", "secondaryClass");
+        mainDivElem.classList.toggle("test");
+        mainDivElem.classList.toggle("test");
+      }
+      // Toggle Paragraph
+      {
+      }
+    </script>
+  </body>
+</html>
