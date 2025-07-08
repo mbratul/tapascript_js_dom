@@ -1,0 +1,33 @@
+/* Responsive Media Query Goes Here */
+
+/* For Mobile Template */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.8rem;
+    /* background-color: #de3249; */
+  }
+}
+
+/* For Tablet Template */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 1rem;
+    /* background-color: #32de46; */
+  }
+}
+
+/* For Laptop Template */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1.2rem;
+    /* background-color: #5d32de; */
+  }
+}
+
+/* For Large Screen Template */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    font-size: 1.4rem;
+    /* background-color: blue; */
+  }
+}
