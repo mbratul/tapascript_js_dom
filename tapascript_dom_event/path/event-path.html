@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="./event.css" />
   </head>
   <body>
+    <h1>Event Bubbling, Capturing, and Delegation</h1>
+    <img
+      src="./images/download.png"
+      alt="Event Bubbling"
+      width="400"
+      height="300"
+    />
+    <a
+      href="https://javascript.info/bubbling-and-capturing"
+      target="_blank"
+      style="display: block"
+      >learn event bubbling-and-capturing</a
+    >
+    <div id="grandparent">
+      <div id="parent"><button id="child">Click Me</button></div>
+    </div>
+    <hr />
+    <h2>Event Delegation</h2>
+    <ul id="itemList">
+      <li>item 1</li>
+      <li>item 2</li>
+    </ul>
     <script src="./event-path.js"></script>
   </body>
 </html>
