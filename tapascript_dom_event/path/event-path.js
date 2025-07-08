@@ -54,3 +54,14 @@ document.querySelector("#itemList").addEventListener("click", (event) => {
     console.log(`you clicked on ${event.target.textContent}`);
   }
 });
+
+// stop propagation
+
+document.querySelector("#father").addEventListener("click", (event) => {
+  console.log(`parent clicked`);
+});
+
+document.querySelector("#son").addEventListener("click", (event) => {
+  event.stopPropagation();
+  console.log(`child clicked`);
+});
