@@ -4,6 +4,7 @@ let faq = document.querySelector(".faq");
 faq.addEventListener("click", function (e) {
   if (e.target.classList.contains("question")) {
     e.stopPropagation();
+
     let currentItem = e.target.parentElement;
     let currentAnswer = currentItem.querySelector(".answer");
     currentAnswer.classList.toggle("show");
