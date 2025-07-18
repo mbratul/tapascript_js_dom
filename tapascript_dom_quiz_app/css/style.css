@@ -58,3 +58,22 @@ h1 {
   margin-bottom: 20px;
   color: #ffcc00;
 }
+.option-btn {
+  padding: 12px;
+  background: #38385e;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option-btn:hover {
+  background: #4b4b7e;
+}
+.option-btn.correct {
+  background: #3cb371;
+}
+.option-btn.wrong {
+  background: #e74c3c;
+}

@@ -46,8 +46,23 @@ function loadQuestion() {
     const btn = document.createElement("button");
     btn.classList.add("option-btn");
     btn.textContent = option;
+    btn.addEventListener("click", () => selectAnswer(index));
     optionsElem.appendChild(btn);
   });
+  nextBtnElem.style.display = "none";
+}
+
+function selectAnswer(index) {
+  const q = questionElem[currentQuestion];
+  const button = document.querySelectorAll(".option-btn");
+  button.forEach((btn) => (btn.disabled = true));
+  if (index === q.correct) {
+    button[index].classList.add("correct");
+  } else {
+    button[index].classList.add("wrong");
+    button[q.correct].classList.add("correct");
+  }
+  nextBtnElem.style.display = "inline-block";
 }
 
 loadQuestion();
