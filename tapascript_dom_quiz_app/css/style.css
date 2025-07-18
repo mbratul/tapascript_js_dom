@@ -4,13 +4,20 @@
   margin: 0;
   padding: 0;
   outline: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 html {
   font-size: 62.5%; /* font size 10px */
 }
 body {
   font-size: 1rem;
-  background-color: white;
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 section {
   font-size: 2rem;
@@ -18,4 +25,36 @@ section {
 h1 {
   color: #444444;
   font-size: 3rem;
+}
+.quizBox {
+  background: #2a2a40;
+  padding: 3px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+#question {
+  margin-bottom: 20px;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#nextBtn {
+  padding: 10px 20px;
+  border: none;
+  background: #4b6cb7;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+#timer {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
 }
