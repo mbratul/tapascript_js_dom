@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .info {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+      }
+      .action {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Toggle Paragraph -->
+    <h2>Toggle Paragraph Example</h2>
+    <button onclick="toggleInfo()" class="action" id="toggleBtn">
+      Show/Hide Paragraph
+    </button>
+    <p class="info" id="myParagraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+      voluptatem quasi accusantium iusto nemo architecto harum. Doloremque
+      tempore porro culpa!
+    </p>
+    <script>
+      function toggleInfo() {
+        //console.log("toggling");
+        let paraElem = document.querySelector("#myParagraph");
+        //console.log(paraElem);
+        paraElem.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
